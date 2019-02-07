@@ -14,7 +14,7 @@ public class PortDTO {
 	
 	private String status;
 	
-	private Service[] services;
+	private ServiceDTO[] services;
 
 	public int getIdPort() {
 		return idPort;
@@ -28,7 +28,7 @@ public class PortDTO {
 		return status;
 	}
 
-	public Service[] getServices() {
+	public ServiceDTO[] getServices() {
 		return services;
 	}
 
@@ -44,7 +44,7 @@ public class PortDTO {
 		this.status = status;
 	}
 
-	public void setServices(Service[] services) {
+	public void setServices(ServiceDTO[] services) {
 		this.services = services;
 	}
 

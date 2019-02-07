@@ -20,9 +20,9 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 import fr.offensiveConsole.api.domain.Host;
 
-@Entity
-@Table(name="Job")
-@JsonInclude(value = Include.NON_DEFAULT)
+//@Entity
+//@Table(name="Job")
+//@JsonInclude(value = Include.NON_DEFAULT)
 public class Job {
 	
 /*	@JsonProperty

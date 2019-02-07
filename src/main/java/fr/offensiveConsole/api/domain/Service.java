@@ -37,9 +37,11 @@ public class Service {
 	@JsonProperty
 	private String versionService;
 	
-	@OneToMany(fetch = FetchType.LAZY, cascade=CascadeType.ALL)
+	@OneToMany(mappedBy= "service",cascade=CascadeType.ALL)
  	private Collection<CVE> cves = new ArrayList<CVE>();
-	
+ 	
+	@ManyToOne(fetch = FetchType.LAZY, optional = false)
+	@JoinColumn(name = "idport", nullable = false)
 	private Port port;
 	
 	protected Service() {

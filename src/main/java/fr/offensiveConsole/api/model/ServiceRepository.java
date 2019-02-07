@@ -8,8 +8,8 @@ import fr.offensiveConsole.api.domain.Service;
 @Repository
 public interface ServiceRepository extends CrudRepository<Service,Long>{
 	
-	Service findOneById(long id);
-	Iterable<Service> findAllByName(String name);
+	//Service findOneById(long id);
+	//Iterable<Service> findAllByName(String name);
 	
 	
 

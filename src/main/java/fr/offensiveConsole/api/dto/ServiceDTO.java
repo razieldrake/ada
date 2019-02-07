@@ -14,7 +14,7 @@ public class ServiceDTO {
 	
 	private String versionService;
 	
-	private CVE[] cves;
+	private CVEDTO[] cves;
 
 	public long getIdService() {
 		return idService;
@@ -28,7 +28,7 @@ public class ServiceDTO {
 		return versionService;
 	}
 
-	public CVE[] getCves() {
+	public CVEDTO[] getCves() {
 		return cves;
 	}
 
@@ -44,7 +44,7 @@ public class ServiceDTO {
 		this.versionService = versionService;
 	}
 
-	public void setCves(CVE[] cves) {
+	public void setCves(CVEDTO[] cves) {
 		this.cves = cves;
 	}
 

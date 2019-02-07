@@ -8,9 +8,9 @@ import fr.offensiveConsole.api.domain.Port;
 @Repository
 public interface PortRepository extends CrudRepository<Port,Integer>{
 	
-	Iterable<Port> findPortByProtocol(String proto);
-	Iterable<Port> findPortByStatus(String status);
-	Port findOneById(int id);
+	//Iterable<Port> findPortByProtocol(String proto);
+	//Iterable<Port> findPortByStatus(String status);
+	//Port findOneById(int id);
 	
 	
 	

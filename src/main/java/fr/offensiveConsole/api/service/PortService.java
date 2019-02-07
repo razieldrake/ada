@@ -20,14 +20,14 @@ public class PortService {
 		return repo.findOne(id);
 	}
 	
-	Iterable<Port> findPortByProtocol(String protocol){
+	/*Iterable<Port> findPortByProtocol(String protocol){
 		return repo.findPortByProtocol(protocol);
 	}
 	
 	Iterable<Port> findPortByStatus(String status){
 		
 		return repo.findPortByStatus(status);
-	}
+	}*/
 	
 	public Port save(Port port) {
 		

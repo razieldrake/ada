@@ -18,13 +18,13 @@ public class HostDTO {
 	
 	private boolean isNew;
 	
-	private Port[] ports;
+	private PortDTO[] ports;
 
-	public long getIdHost() {
+	public long getId() {
 		return idHost;
 	}
 
-	public String getNameHost() {
+	public String getName() {
 		return nameHost;
 	}
 
@@ -40,15 +40,15 @@ public class HostDTO {
 		return isNew;
 	}
 
-	public Port[] getPorts() {
+	public PortDTO[] getPorts() {
 		return ports;
 	}
 
-	public void setIdHost(long idHost) {
+	public void setId(long idHost) {
 		this.idHost = idHost;
 	}
 
-	public void setNameHost(String nameHost) {
+	public void setName(String nameHost) {
 		this.nameHost = nameHost;
 	}
 
@@ -64,7 +64,7 @@ public class HostDTO {
 		this.isNew = isNew;
 	}
 
-	public void setPorts(Port[] ports) {
+	public void setPorts(PortDTO[] ports) {
 		this.ports = ports;
 	}
 

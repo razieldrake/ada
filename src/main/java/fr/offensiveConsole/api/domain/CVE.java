@@ -1,7 +1,9 @@
 package fr.offensiveConsole.api.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -34,6 +36,7 @@ public class CVE {
 	@JsonProperty
 	private String descriptionCVE;
 	
+	@ManyToOne(fetch = FetchType.LAZY, optional = false)
 	private Service service;
 	
 	protected CVE() {

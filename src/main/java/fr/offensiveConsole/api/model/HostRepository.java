@@ -8,7 +8,7 @@ import fr.offensiveConsole.api.domain.Host;
 @Repository
 public interface HostRepository extends CrudRepository<Host,Long> {
 	
-	Iterable<Host> findAllByIpHost(String ipaddr);
+	//Iterable<Host> findAllByIpHost(String ipaddr);
 	Host findOneHostByIp(String ip);
 	
 

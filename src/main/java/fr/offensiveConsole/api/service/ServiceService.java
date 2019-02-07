@@ -20,10 +20,10 @@ public class ServiceService {
 		return repo.findOne(id);
 	}
 	
-	public Iterable<fr.offensiveConsole.api.domain.Service> findAllWithName(String name){
+	/*public Iterable<fr.offensiveConsole.api.domain.Service> findAllWithName(String name){
 		
 		return repo.findAllByName(name);
-	}
+	}*/
 	public fr.offensiveConsole.api.domain.Service save(fr.offensiveConsole.api.domain.Service service){
 		
 		for (CVE cve : service.getCve()) {
@@ -31,6 +31,10 @@ public class ServiceService {
 		}
 		
 		return repo.save(service);
+	}
+	public void deleteById(long id) {
+		
+		repo.delete(id);
 	}
 
 }
